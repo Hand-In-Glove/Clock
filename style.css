@@ -1,0 +1,50 @@
+/* Edit whatever you like! */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(
+    63,
+    94,
+    251
+  ); /* fall back for browsers that dont support radial-gradient*/
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+#clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#clock-container > img {
+  height: 300px;
+  box-shadow: 0 0 40px 20px #0ff;
+  border-radius: 100%;
+}
+#hand {
+  position: absolute;
+  height: 120px;
+  width: 5px;
+  border-top: 120px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+#input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* .animation {
+  animation: tick 60s 1;
+}
+
+@keyframes tick {
+  100% {
+    transform: rotate(360deg);
+  }
+} */
